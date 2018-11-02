@@ -30,6 +30,11 @@ The primary reason behind this is the loopholes in mobile app architecture & mob
 mobile app architecture is a set of patterns and techniques which are required to be followed in order to build a fully structured mobile application. The techniques and patterns are formulated keeping the vendor requirement and industry standards in mind.
 ![Mobile Architecture](https://github.com/laanayabdrzak/MobileArchitecture/images/mobile-app-architectures.jpg)
 
+While building better app architecture is vital for any business, not many appreneurs succeed in doing it. Here are few considerations you need to check at the time of building mobile app architecture:
+
+**1. Determining the device**
+  Here you need to keep the device types in mind. This covers the screen size, CPU characteristics, resolution (DPI), storage space and   memory, and development tool environment availability.
+
 ###### The various elements of an app’s architecture
 
 ## Author
