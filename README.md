@@ -11,8 +11,7 @@ Interested in mobile platforms? Our Best Practices in [Android Development](http
 If you are looking for something specific, you can jump right into the relevant section from here.
 
 1. [Getting Started](#getting-started)
-1. [Mobile Anatomy](#mobile-anatomy)
-1. [Architecture](#architecture)
+1. [Mobile Architecture](#mobile-architecture)
 1. [Stores](#stores)
 1. [Assets](#assets)
 1. [Coding Style](#coding-style)
@@ -26,6 +25,7 @@ If you are looking for something specific, you can jump right into the relevant 
 ## Getting started
 
 The primary reason behind this is the loopholes in mobile app architecture & mobile app development process.
+
 ## Mobile Architecture
 
 ### The various elements of an app’s architecture
