@@ -1,5 +1,4 @@
 # Mobile Architecture
-A manual for do's and don'ts for both Android/ iOS development
 ======================
 Just like software, this document will rot unless we take care of it. We encourage everyone to help us on that – just open an issue or send a pull request!
 
