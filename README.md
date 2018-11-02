@@ -3,7 +3,7 @@ A manual for do's and don'ts for both Android/ iOS development
 ======================
 Just like software, this document will rot unless we take care of it. We encourage everyone to help us on that – just open an issue or send a pull request!
 
-Interested in mobile platforms? Our Best Practices in [Android Development](https://github.com/laanayabdrzak/android-best-practices) and [iOS Development](https://github.com/laanayabdrzak/ios-best-practices) Best Practices documents have got you covered.
+Interested in mobile platforms? Our Best Practices in [Android Development](https://github.com/laanayabdrzak/MobileArchitecture/android-best-practices) and [iOS Development](https://github.com/laanayabdrzak/MobileArchitecture/ios-best-practices) Best Practices documents have got you covered.
 
 
 ## Contents
@@ -28,6 +28,9 @@ The primary reason behind this is the loopholes in mobile app architecture & mob
 
 ## Architecture
 
-### The various elements of an app’s architecture
+mobile app architecture is a set of patterns and techniques which are required to be followed in order to build a fully structured mobile application. The techniques and patterns are formulated keeping the vendor requirement and industry standards in mind.
+![Mobile Architecture](https://github.com/laanayabdrzak/MobileArchitecture/images/mobile-app-architectures.jpg)
 
-![Mobile Architecture](https://octodex.github.com/images/yaktocat.png)
+##### The various elements of an app’s architecture
+
+
