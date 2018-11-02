@@ -25,6 +25,7 @@ If you are looking for something specific, you can jump right into the relevant 
 
 ## Getting started
 
+The primary reason behind this is the loopholes in mobile app architecture & mobile app development process.
 ## Mobile Architecture
 
 ### The various elements of an app’s architecture
