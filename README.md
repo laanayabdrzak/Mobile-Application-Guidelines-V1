@@ -11,6 +11,7 @@ If you are looking for something specific, you can jump right into the relevant 
 
 1. [Getting Started](#getting-started)
 1. [Architecture](#architecture)
+1. [Design Considerations](#design-considerations)
 1. [Stores](#stores)
 1. [Assets](#assets)
 1. [Coding Style](#coding-style)
@@ -32,6 +33,10 @@ mobile app architecture is a set of patterns and techniques which are required t
 
 While building better app architecture is vital for any business, not many appreneurs succeed in doing it. Here are few considerations you need to check at the time of building mobile app architecture:
 ##### The various elements of an app’s architecture
+
+A mobile application will normally be structured as a multi-layered application consisting of user experience, business, and data layers. When developing a mobile application, you may choose to develop a thin Web-based client or a rich client. If you are building a rich client, the business and data services layers are likely to be located on the device itself. If you are building a thin client, the business and data layers will be located on the server. Figure 1 illustrates common rich client mobile application architecture with components grouped by areas of concern.
+
+## Design Considerations
 
 **1. Determining the device**
   Here you need to keep the device types in mind. This covers the screen size, CPU characteristics, resolution (DPI), storage space and   memory, and development tool environment availability.
