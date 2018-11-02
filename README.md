@@ -31,11 +31,29 @@ mobile app architecture is a set of patterns and techniques which are required t
 ![Mobile Architecture](https://github.com/laanayabdrzak/MobileArchitecture/images/mobile-app-architectures.jpg)
 
 While building better app architecture is vital for any business, not many appreneurs succeed in doing it. Here are few considerations you need to check at the time of building mobile app architecture:
+##### The various elements of an app’s architecture
 
 **1. Determining the device**
   Here you need to keep the device types in mind. This covers the screen size, CPU characteristics, resolution (DPI), storage space and   memory, and development tool environment availability.
+The features in the application might have special requirements from hardware or software; this is why at the time of building app architecture you need to have the knowledge of devices that the app will support.
 
-###### The various elements of an app’s architecture
+**2. Considering bandwidth**
+There are times when connectivity is either intermittent or not available. Your app architecture needs to be build keeping in mind the worst network scenarios. Design your caching, data access mechanism, and state management considering times of intermittent connectivity. Batch communications and choose software and hardware based on it.
+
+**3. Defining user interface**
+You have the world and entire future ahead to show your creativity. Do not pour it all at the very first stage. Keep your user Interface as simple as possible. It has been noticed that a muddled UI becomes a major reason behind a mobile application’s failure.
+
+**4. Navigation methods**
+This one again comes on the design front. However, it requires expertise in both front and back end. There are numerous ways to navigate through app features, it is important for you to analyze which one’s good for your mobile application. The list includes:
+
+Single view
+Stacked navigation Bar
+Tab controller
+Scroll views
+Search driven
+Model controller
+Gesture-based
+Understand your customers and the app requirement and according chose the navigation method as it directly impacts your user experience.
 
 ## Author
 
