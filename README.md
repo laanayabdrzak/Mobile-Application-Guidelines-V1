@@ -2,7 +2,7 @@
 
 Just like software, this document will rot unless we take care of it. We encourage everyone to help us on that – just open an issue or send a pull request!
 
-Interested in mobile platforms? Our Best Practices in [Android Development](https://github.com/laanayabdrzak/Mobile-Application-Guidelines-V1/android-best-practices.md) and [iOS Development](Mobile-Application-Guidelines-V1/ios-best-practices.md) Best Practices documents have got you covered.
+Interested in mobile platforms? Our Best Practices in [Android Development](https://github.com/laanayabdrzak/Mobile-Application-Guidelines-V1/blob/master/android-best-practices.md) and [iOS Development](https://github.com/laanayabdrzak/Mobile-Application-Guidelines-V1/blob/master/ios-best-practices.md) Best Practices documents have got you covered.
 
 
 ## Contents
