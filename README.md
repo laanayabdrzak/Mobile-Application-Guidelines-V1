@@ -92,20 +92,11 @@ When getting started with your design, bear in mind the key principles that will
 ## Coding styles
 In general they are a set of standards and guidelines which are/should be used when writing the source code for a program
 #### Naming
- - Meaningful names and functions<br>
-   ```int d; // elapsed time in days``` <br>  vs <br>  ```int elapsedTimeInDays;```
- - Use pronounceable names<br>
-   ```class DtaRcrd102 {
-    private Date genymdhms;
-    private Date modymdhms;
-    }```
-    
-     vs
-     
-   ```class Customer {
-    private Date generationTimestamp;
-    private Date modificationTimestamp;
-    }```
+ - Meaningful names and functions.
+ - Use pronounceable names.
+ - Classes and objects should have noun or noun phrase names like Customer, WikiPage, Account, and AddressParser. Avoid words like Manager, Processor, Data, or Info in the name of a class. A class name should not be a verb.
+ - Methods should have verb or verb phrase names like postPayment, deletePage, or save.
+ 
 #### Structure
  - Comments are a great way to group your methods, especially in view controllers. 
 
@@ -130,7 +121,7 @@ Keep any HTTP traffic to remote servers encrypted with TLS at all times. To avoi
 Take extra care to set up proper log levels before releasing your app. Production builds should never log passwords, API tokens and the like, as this can easily cause them to leak to the public. On the other hand, logging the basic control flow can help you pinpoint issues that your users are experiencing.
 
 #### User interface
-When using `TextFields` for password entry, remember to set their secureTextEntry property to true to avoid showing the password in cleartext. You should also disable auto-correction for the password field, and clear the field whenever appropriate, such as when your app enters the background.
+When using `TextFields` for password entry, remember to set their `secureTextEntry` property to true to avoid showing the password in cleartext. You should also disable auto-correction for the password field, and clear the field whenever appropriate, such as when your app enters the background.
 
 When this happens, it's also good practice to clear the Pasteboard to avoid passwords and other sensitive data from leaking. As iOS may take screenshots of your app for display in the app switcher, make sure to clear any sensitive data from the UI before returning from `applicationDidEnterBackground`.
 
