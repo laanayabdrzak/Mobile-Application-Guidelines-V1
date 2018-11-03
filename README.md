@@ -14,6 +14,7 @@ If you are looking for something specific, you can jump right into the relevant 
 1. [Design Considerations](#design-considerations)
 1. [Common Issues](#common-issues)
 1. [Key Design Principles](#key-design-principles)
+1. [Assets](#assets)
 1. [Coding Style](#coding-style)
 1. [Security](#security)
 1. [Diagnostics](#diagnostics)
@@ -40,17 +41,17 @@ A mobile application will normally be structured as a multi-layered application 
 
 The following design guidelines provide information about different aspects you should consider when designing a mobile application. Follow these guidelines to ensure that your application meets your requirements and performs efficiently in scenarios common to mobile applications:
 
-##### 1. Determining the device
+#### 1. Determining the device
 Here you need to keep the device types in mind. This covers the screen size, CPU characteristics, resolution (DPI), storage space and   memory, and development tool environment availability.
 The features in the application might have special requirements from hardware or software; this is why at the time of building app architecture you need to have the knowledge of devices that the app will support.
 
-##### 2. Considering bandwidth
+#### 2. Considering bandwidth
 There are times when connectivity is either intermittent or not available. Your app architecture needs to be build keeping in mind the worst network scenarios. Design your caching, data access mechanism, and state management considering times of intermittent connectivity. Batch communications and choose software and hardware based on it.
 
-##### 3. Defining user interface
+#### 3. Defining user interface
 You have the world and entire future ahead to show your creativity. Do not pour it all at the very first stage. Keep your user Interface as simple as possible. It has been noticed that a muddled UI becomes a major reason behind a mobile application’s failure.
 
-##### 4. Navigation methods
+#### 4. Navigation methods
 This one again comes on the design front. However, it requires expertise in both front and back end. There are numerous ways to navigate through app features, it is important for you to analyze which one’s good for your mobile application. The list includes:
 
  - Single view
@@ -86,6 +87,65 @@ Validation |**• Not validating input and data during host PC communication.**<
 
 ## Key Design Principles
 When getting started with your design, bear in mind the key principles that will help you to create architecture that meets “best practices,” minimizes costs and maintenance requirements, and promotes usability and extendibility. [Read more...](https://android.jlelse.eu/android-development-the-solid-principles-3b5779b105d2)
+## Assets
+
+## Coding styles
+In general they are a set of standards and guidelines which are/should be used when writing the source code for a program
+#### Naming
+#### Structure
+Comments are a great way to group your methods, especially in view controllers. Here is a Swift example for a common structure that works with almost any view controller:
+```swift
+import SomeExternalFramework
+
+class FooViewController : UIViewController, FoobarDelegate {
+
+    let foo: Foo
+
+    private let fooStringConstant = "FooConstant"
+    private let floatConstant = 1234.5
+
+    // MARK: Lifecycle
+
+    // Custom initializers go here
+
+    // MARK: View Lifecycle
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // ...
+    }
+
+    // MARK: Layout
+
+    private func makeViewConstraints() {
+        // ...
+    }
+
+    // MARK: User Interaction
+
+    func foobarButtonTapped() {
+        // ...
+    }
+
+    // MARK: FoobarDelegate
+
+    func foobar(foobar: Foobar, didSomethingWithFoo foo: Foo) {
+        // ...
+    }
+
+    // MARK: Additional Helpers
+
+    private func displayNameForFoo(foo: Foo) {
+        // ...
+    }
+
+}
+```
+#### External style guides
+It can however be useful to peruse the style guides of other software companies, even if some bits can be quite company-specific or opinionated.
+
+**GitHub**: [Swift](https://github.com/github/swift-style-guide)
+**Ray Wenderlich**: [Swift](https://github.com/raywenderlich/swift-style-guide) 
 
 ## Security
 Even in an age where we trust our portable devices with the most private data, app security remains an often-overlooked subject. Try to find a good trade-off given the nature of your data; following just a few simple rules can go a long way here. A good resource to get started is Apple's own [iOS Security Guide](https://www.apple.com/business/site/docs/iOS_Security_Guide.pdf).
