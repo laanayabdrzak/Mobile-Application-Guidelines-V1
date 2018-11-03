@@ -92,8 +92,8 @@ When getting started with your design, bear in mind the key principles that will
 ## Coding styles
 In general they are a set of standards and guidelines which are/should be used when writing the source code for a program
 #### Naming
- - Meaningful names and functions
-   ```int d; // elapsed time in days```   vs   ```int elapsedTimeInDays;```
+ - Meaningful names and functions<br>
+   ```int d; // elapsed time in days``` <br>  vs <br>  ```int elapsedTimeInDays;```
 #### Structure
  - Comments are a great way to group your methods, especially in view controllers. 
 
