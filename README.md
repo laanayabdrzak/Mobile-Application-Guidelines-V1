@@ -43,13 +43,13 @@ The following design guidelines provide information about different aspects you 
 Here you need to keep the device types in mind. This covers the screen size, CPU characteristics, resolution (DPI), storage space and   memory, and development tool environment availability.
 The features in the application might have special requirements from hardware or software; this is why at the time of building app architecture you need to have the knowledge of devices that the app will support.
 
-### 2. Considering bandwidth
+##### 2. Considering bandwidth
 There are times when connectivity is either intermittent or not available. Your app architecture needs to be build keeping in mind the worst network scenarios. Design your caching, data access mechanism, and state management considering times of intermittent connectivity. Batch communications and choose software and hardware based on it.
 
-### 3. Defining user interface
+#### 3. Defining user interface
 You have the world and entire future ahead to show your creativity. Do not pour it all at the very first stage. Keep your user Interface as simple as possible. It has been noticed that a muddled UI becomes a major reason behind a mobile application’s failure.
 
-### 4. Navigation methods
+#### 4. Navigation methods
 This one again comes on the design front. However, it requires expertise in both front and back end. There are numerous ways to navigate through app features, it is important for you to analyze which one’s good for your mobile application. The list includes:
 
  - Single view
@@ -62,7 +62,7 @@ This one again comes on the design front. However, it requires expertise in both
  
 Understand your customers and the app requirement and according chose the navigation method as it directly impacts your user experience.
 
-### 5. Resource constraints
+#### 5. Resource constraints
 Every design decision should take into account the limited CPU, memory, storage capacity, and battery life of mobile devices. Battery life is usually the most limiting factor in mobile devices. **Battery life** is usually the most limiting factor in mobile devices. Backlighting, reading and writing to memory, wireless connections, specialized hardware, and processor speed all have an impact on the overall power usage. 
 
 ## Author
