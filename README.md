@@ -92,59 +92,15 @@ When getting started with your design, bear in mind the key principles that will
 ## Coding styles
 In general they are a set of standards and guidelines which are/should be used when writing the source code for a program
 #### Naming
+ - Meaningful names and functions
+   ```int d; // elapsed time in days```   vs   ```int elapsedTimeInDays;```
 #### Structure
-Comments are a great way to group your methods, especially in view controllers. Here is a Swift example for a common structure that works with almost any view controller:
-```swift
-import SomeExternalFramework
+ - Comments are a great way to group your methods, especially in view controllers. 
 
-class FooViewController : UIViewController, FoobarDelegate {
-
-    let foo: Foo
-
-    private let fooStringConstant = "FooConstant"
-    private let floatConstant = 1234.5
-
-    // MARK: Lifecycle
-
-    // Custom initializers go here
-
-    // MARK: View Lifecycle
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // ...
-    }
-
-    // MARK: Layout
-
-    private func makeViewConstraints() {
-        // ...
-    }
-
-    // MARK: User Interaction
-
-    func foobarButtonTapped() {
-        // ...
-    }
-
-    // MARK: FoobarDelegate
-
-    func foobar(foobar: Foobar, didSomethingWithFoo foo: Foo) {
-        // ...
-    }
-
-    // MARK: Additional Helpers
-
-    private func displayNameForFoo(foo: Foo) {
-        // ...
-    }
-
-}
-```
 #### External style guides
 It can however be useful to peruse the style guides of other software companies, even if some bits can be quite company-specific or opinionated.
 
-**GitHub**: [Swift](https://github.com/github/swift-style-guide)
+**GitHub**: [Swift](https://github.com/github/swift-style-guide)<br>
 **Ray Wenderlich**: [Swift](https://github.com/raywenderlich/swift-style-guide) 
 
 ## Security
