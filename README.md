@@ -72,7 +72,7 @@ Category | Key Issues
 ------------ | -------------
 Authentication and Authorization | **- Failing to authenticate/ authorize in occasionally connected scenarios.**<br>**- Failing to use authentication and authorization over a virtual private network (VPN).**<br>
 Caching | **- Caching unnecessary data on a device that has limited resources. **<br>**- Caching sensitive data in unencrypted form.** <br>**- Failing to choose an appropriate caching technology.** <br>**- Choosing inappropriate cache locations and formats.** <br>**- Relying on cached data that may no longer be available in occasionally connected scenarios.**
-Communication | **- Failing to protect sensitive data over the air.**
+Communication | **• Failing to protect sensitive data over the air.**<br>**• Failing to secure Web service communication**
 Configuration Management | **- Failing to restore configuration state after a reset.**
 Data Access | **- Failing to implement data-access mechanisms that work with intermittent connectivity.**
 Device | **- Failing to consider device heterogeneity, such as screen size and CPU power.**
