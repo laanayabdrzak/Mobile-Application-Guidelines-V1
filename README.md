@@ -13,7 +13,7 @@ If you are looking for something specific, you can jump right into the relevant 
 1. [Architecture](#architecture)
 1. [Design Considerations](#design-considerations)
 1. [Common Issues](#common-issues)
-1. [Assets](#assets)
+1. [Key Design Principles](#key-design-principles)
 1. [Coding Style](#coding-style)
 1. [Security](#security)
 1. [Diagnostics](#diagnostics)
@@ -68,6 +68,8 @@ Every design decision should take into account the limited CPU, memory, storage 
 ## Common Issues
 There are several common issues that you must consider as your develop your design. These issues can be categorized into specific areas of the design. The following table lists the common issues for each category where mistakes are most often made.
 
+## Key Design Principles
+When getting started with your design, bear in mind the key principles that will help you to create architecture that meets “best practices,” minimizes costs and maintenance requirements, and promotes usability and extendibility. [for more details..](https://android.jlelse.eu/android-development-the-solid-principles-3b5779b105d2)
 ## Author
 
 <a href="https://www.linkedin.com/in/laanayabdrzak">
