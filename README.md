@@ -63,7 +63,7 @@ This one again comes on the design front. However, it requires expertise in both
 Understand your customers and the app requirement and according chose the navigation method as it directly impacts your user experience.
 
 ##### 5. Resource constraints
-Every design decision should take into account the limited CPU, memory, storage capacity, and battery life of mobile devices. Battery life is usually the most limiting factor in mobile devices. **Battery life** is usually the most limiting factor in mobile devices. Backlighting, reading and writing to memory, wireless connections, specialized hardware, and processor speed all have an impact on the overall power usage. 
+Every design decision should take into account the limited CPU, memory, storage capacity, and battery life of mobile devices. **Battery life** is usually the most limiting factor in mobile devices. **Battery life** is usually the most limiting factor in mobile devices. Backlighting, reading and writing to memory, wireless connections, specialized hardware, and processor speed all have an impact on the overall power usage. 
 
 ## Common Issues
 There are several common issues that you must consider as your develop your design. These issues can be categorized into specific areas of the design. The following table lists the common issues for each category where mistakes are most often made.
@@ -71,7 +71,7 @@ There are several common issues that you must consider as your develop your desi
 Category | Key Issues
 ------------ | -------------
 Authentication and Authorization | - Failing to authenticate/ authorize in occasionally connected scenarios.<br>- Failing to use authentication and authorization over a virtual private network (VPN)<br>
-Caching | - Caching unnecessary data on a device that has limited resources
+Caching | - Caching unnecessary data on a device that has limited resources. <br>- Caching sensitive data in unencrypted form. <br>- Failing to choose an appropriate caching technology. <br>- Choosing inappropriate cache locations and formats. <br>- Relying on cached data that may no longer be available in occasionallyconnected scenarios.
 Communication | - Failing to protect sensitive data over the air
 Configuration Management | - Failing to restore configuration state after a reset
 Data Access | - Failing to implement data-access mechanisms that work with intermittent connectivity
