@@ -70,7 +70,7 @@ There are several common issues that you must consider as your develop your desi
 
 Category | Key Issues
 ------------ | -------------
-Authentication and Authorization | - Failing to authenticate in occasionally connected scenarios. \n- Failing to authorize in occasionally-connected scenarios
+Authentication and Authorization | - Failing to authenticate in occasionally connected scenarios. <br>- Failing to authorize in occasionally-connected scenarios
                                 
 
 ## Key Design Principles
