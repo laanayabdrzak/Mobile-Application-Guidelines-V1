@@ -70,11 +70,12 @@ There are several common issues that you must consider as your develop your desi
 
 Category | Key Issues
 ------------ | -------------
-Authentication and Authorization | - Failing to authenticate in occasionally connected scenarios. - Failing to authorize in occasionally-connected scenarios
+Authentication and Authorization | - Failing to authenticate in occasionally connected scenarios. 
+                                   - Failing to authorize in occasionally-connected scenarios
                                 
 
 ## Key Design Principles
-When getting started with your design, bear in mind the key principles that will help you to create architecture that meets “best practices,” minimizes costs and maintenance requirements, and promotes usability and extendibility. [for more details..](https://android.jlelse.eu/android-development-the-solid-principles-3b5779b105d2)
+When getting started with your design, bear in mind the key principles that will help you to create architecture that meets “best practices,” minimizes costs and maintenance requirements, and promotes usability and extendibility. [for more...](https://android.jlelse.eu/android-development-the-solid-principles-3b5779b105d2)
 ## Author
 
 <a href="https://www.linkedin.com/in/laanayabdrzak">
