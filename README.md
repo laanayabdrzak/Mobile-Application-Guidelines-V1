@@ -70,7 +70,19 @@ There are several common issues that you must consider as your develop your desi
 
 Category | Key Issues
 ------------ | -------------
-Authentication and Authorization | - Failing to authenticate in occasionally connected scenarios. <br>- Failing to authorize in occasionally-connected scenarios
+Authentication and Authorization | - Failing to authenticate/ authorize in occasionally connected scenarios.<br>- Failing to use authentication and authorization over a virtual private network (VPN)<br>
+Caching | - Caching unnecessary data on a device that has limited resources
+Communication | - Failing to protect sensitive data over the air
+Configuration Management | - Failing to restore configuration state after a reset
+Data Access | - Failing to implement data-access mechanisms that work with intermittent connectivity
+Device | - Failing to consider device heterogeneity, such as screen size and CPU power
+Exception Management |
+Logging |
+Porting |
+Synchronization |
+Testing |
+UI |
+Validation |
                                 
 
 ## Key Design Principles
