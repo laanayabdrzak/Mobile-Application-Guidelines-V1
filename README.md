@@ -70,14 +70,8 @@ There are several common issues that you must consider as your develop your desi
 
 Category | Key Issues
 ------------ | -------------
-Authentication and Authorization | • Failing to authenticate in occasionally connected scenarios
-                                 |  • Failing to authorize in occasionally-connected scenarios
-                                 |  • Failing to use authentication and authorization over a virtual private network (VPN)
-                                 |  • Failing to authenticate during synchronization over the air
-                                 |  • Failing to authenticate during synchronization with the host PC
-                                 |  • Failing to authenticate for all connection scenarios, such as over the air, cradled, Bluetooth, and                                    |    Secure Digital (SD) cards
-                                 |  • Failing to appreciate the differences between security models of different devices
-Content in the first column | Content in the second column
+Authentication and Authorization | - Failing to authenticate in occasionally connected scenarios. - Failing to authorize in occasionally-connected scenarios
+                                
 
 ## Key Design Principles
 When getting started with your design, bear in mind the key principles that will help you to create architecture that meets “best practices,” minimizes costs and maintenance requirements, and promotes usability and extendibility. [for more details..](https://android.jlelse.eu/android-development-the-solid-principles-3b5779b105d2)
