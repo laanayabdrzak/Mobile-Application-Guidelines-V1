@@ -94,6 +94,18 @@ In general they are a set of standards and guidelines which are/should be used w
 #### Naming
  - Meaningful names and functions<br>
    ```int d; // elapsed time in days``` <br>  vs <br>  ```int elapsedTimeInDays;```
+ - Use pronounceable names<br>
+   ```class DtaRcrd102 {
+    private Date genymdhms;
+    private Date modymdhms;
+    }```
+    
+     vs
+     
+   ```class Customer {
+    private Date generationTimestamp;
+    private Date modificationTimestamp;
+    }```
 #### Structure
  - Comments are a great way to group your methods, especially in view controllers. 
 
