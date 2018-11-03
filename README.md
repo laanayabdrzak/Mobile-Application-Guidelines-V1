@@ -96,7 +96,7 @@ If your app needs to store sensitive data, such as a username and password, an a
 When storing files and passwords, be sure to set the correct protection level, and choose it conservatively. If you need access while the device is locked (e.g. for background tasks), use the "accessible after first unlock" variety. In other cases, you should probably require that the device is unlocked to access the data. Only keep sensitive data around while you need it.
 
 ##### Networking
-Keep any HTTP traffic to remote servers encrypted with TLS at all times. To avoid `man-in-the-middle` attacks that intercept your encrypted traffic, you can set up certificate pinning. Popular networking libraries such as Retrofit and Alamofire support this out of the box.
+Keep any HTTP traffic to remote servers encrypted with TLS at all times. To avoid `man-in-the-middle` attacks that intercept your encrypted traffic, you can set up certificate pinning. Popular networking libraries such as **Retrofit** and **Alamofire** support this out of the box.
 
 ##### Logging
 Take extra care to set up proper log levels before releasing your app. Production builds should never log passwords, API tokens and the like, as this can easily cause them to leak to the public. On the other hand, logging the basic control flow can help you pinpoint issues that your users are experiencing.
