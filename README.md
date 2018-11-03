@@ -30,11 +30,11 @@ The primary reason behind this is the loopholes in mobile app architecture & mob
 
 Mobile app architecture is a set of patterns and techniques which are required to be followed in order to build a fully structured mobile application. The techniques and patterns are formulated keeping the vendor requirement and industry standards in mind.
 
-![Mobile Architecture](https://github.com/laanayabdrzak/Mobile-Application-Guidelines-V1/blob/master/mobile-app-architectures.jpg)
+   ![Mobile Architecture](https://github.com/laanayabdrzak/Mobile-Application-Guidelines-V1/blob/master/mobile-app-architectures.jpg)
 
-                                         **The various elements of an app’s architecture**
+**The various elements of an app’s architecture**
 
-A mobile application will normally be structured as a multi-layered application consisting of user experience, business, and data layers. When developing a mobile application, you may choose to develop a thin Web-based client or a rich client. If you are building a rich client, the business and data services layers are likely to be located on the device itself. If you are building a thin client, the business and data layers will be located on the server. Figure 1 illustrates common rich client mobile application architecture with components grouped by areas of concern.
+A mobile application will normally be structured as a multi-layered application consisting of user experience, business, and data layers. When developing a mobile application, you may choose to develop a thin Web-based client or a rich client. If you are building a rich client, the business and data services layers are likely to be located on the device itself. If you are building a thin client, the business and data layers will be located on the server. The figure above illustrates common rich client mobile application architecture with components grouped by areas of concern.
 
 ## Design Considerations
 
@@ -75,8 +75,8 @@ Authentication and Authorization | **• Failing to authenticate/ authorize in o
 Caching | **• Caching unnecessary data on a device that has limited resources. **<br>**• Caching sensitive data in unencrypted form.** <br>**• Failing to choose an appropriate caching technology.** <br>**• Choosing inappropriate cache locations and formats.** <br>**• Relying on cached data that may no longer be available in occasionally connected scenarios.**
 Communication | **• Failing to protect sensitive data over the air.**<br>**• Failing to secure Web service communication.**<br>**• Failing to secure communication over a VPN.**<br>**• Not appreciating the performance impact of communication security on limited-bandwidth connections.**<br>**• Not managing limited-bandwidth connections efficiently.**<br>**• Not managing connections to multiple network services efficiently**<br>**• Not designing to work with intermittent connectivity.**<br>**• Not designing to minimize power usage when running on battery power.**
 Configuration Management | **• Failing to restore configuration state after a reset.**
-Data Access | **• Failing to implement data-access mechanisms that work with intermittent connectivity.**
-Device | **• Failing to consider device heterogeneity, such as screen size and CPU power.**
+Data Access | **•Failing to implement data-access mechanisms that work with intermittent connectivity.**<br>**• Not considering database access performance.**<br>**• Navigating through large datasets when not required**
+Device | **• Failing to consider device heterogeneity, such as screen size and CPU power.**<br>**• Not presenting user-friendly error messages to the user.**<br>**• Failing to protect sensitive information.**<br>**• Failure to consider the processing power of the device.**
 Exception Management |
 Logging |
 Porting |
