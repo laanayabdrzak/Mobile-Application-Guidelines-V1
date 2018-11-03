@@ -32,7 +32,7 @@ Mobile app architecture is a set of patterns and techniques which are required t
 
 ![Mobile Architecture](https://github.com/laanayabdrzak/Mobile-Application-Guidelines-V1/blob/master/mobile-app-architectures.jpg)
 
-<p style="text-align: center;"> ##### The various elements of an app’s architecture</p>
+                                         **The various elements of an app’s architecture**
 
 A mobile application will normally be structured as a multi-layered application consisting of user experience, business, and data layers. When developing a mobile application, you may choose to develop a thin Web-based client or a rich client. If you are building a rich client, the business and data services layers are likely to be located on the device itself. If you are building a thin client, the business and data layers will be located on the server. Figure 1 illustrates common rich client mobile application architecture with components grouped by areas of concern.
 
