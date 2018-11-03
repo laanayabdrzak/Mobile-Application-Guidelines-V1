@@ -77,17 +77,15 @@ Communication | **• Failing to protect sensitive data over the air.**<br>**•
 Configuration Management | **• Failing to restore configuration state after a reset.**
 Data Access | **•Failing to implement data-access mechanisms that work with intermittent connectivity.**<br>**• Not considering database access performance.**<br>**• Navigating through large datasets when not required**
 Device | **• Failing to consider device heterogeneity, such as screen size and CPU power.**<br>**• Not presenting user-friendly error messages to the user.**<br>**• Failing to protect sensitive information.**<br>**• Failure to consider the processing power of the device.**
-Exception Management |
-Logging |
-Porting |
-Synchronization |
-Testing |
-UI |
+Exception Management |**• Not recovering application state after an exception.**<br>**• Revealing sensitive information to the end user.**<br>**• Not logging sufficient details about the exception.**<br>**• Using exceptions to control application flow.**
+Synchronization |**• Failing to secure synchronization when communicating.**<br>**• Failing to manage synchronization over the air as opposed to cradled synchronization.**<br>**• Failing to manage synchronization interruptions.**<br>**• Failing to handle synchronization conflicts.**<br>**• Failing to consider merge replication where appropriate.**
+Testing |**• Failing to appreciate debugging costs when choosing to support multiple device types.**<br>**• Failing to design with debugging in mind; for example, using emulators instead of the actual devices.**<br>**• Failing to debug in all connection scenarios.**
+UI |**• Not considering that only one application can be running.**<br>**• Not designing a touch-screen or stylus-driven UI for usability.**<br>**• Not including support for multiple screen sizes and orientations.**<br>**• Not managing device reset and resume.**
 Validation |
                                 
 
 ## Key Design Principles
-When getting started with your design, bear in mind the key principles that will help you to create architecture that meets “best practices,” minimizes costs and maintenance requirements, and promotes usability and extendibility. [for more...](https://android.jlelse.eu/android-development-the-solid-principles-3b5779b105d2)
+When getting started with your design, bear in mind the key principles that will help you to create architecture that meets “best practices,” minimizes costs and maintenance requirements, and promotes usability and extendibility. [Read more...](https://android.jlelse.eu/android-development-the-solid-principles-3b5779b105d2)
 ## Author
 
 <a href="https://www.linkedin.com/in/laanayabdrzak">
