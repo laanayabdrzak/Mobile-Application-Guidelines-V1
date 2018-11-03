@@ -29,7 +29,7 @@ The primary reason behind this is the loopholes in mobile app architecture & mob
 ## Architecture
 
 Mobile app architecture is a set of patterns and techniques which are required to be followed in order to build a fully structured mobile application. The techniques and patterns are formulated keeping the vendor requirement and industry standards in mind.
-![Mobile Architecture](https://github.com/laanayabdrzak/MobileArchitecture/images/mobile-app-architectures.jpg)
+![Mobile Architecture](https://github.com/laanayabdrzak/Mobile-Application-Guidelines-V1/blob/master/mobile-app-architectures.jpg)
 
 ##### The various elements of an app’s architecture
 
