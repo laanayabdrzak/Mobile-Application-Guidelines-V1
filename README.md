@@ -69,7 +69,7 @@ Every design decision should take into account the limited CPU, memory, storage 
 ## Common Issues
 There are several common issues that you must consider as your develop your design. These issues can be categorized into specific areas of the design. The following table lists the common issues for each category where mistakes are most often made.
 
-Category | Key Issues
+Category | Key issues
 ------------ | -------------
 Authentication and Authorization | **• Failing to authenticate/ authorize in occasionally connected scenarios.**<br>**• Failing to use authentication and authorization over a virtual private network (VPN).**<br>
 Caching | **• Caching unnecessary data on a device that has limited resources. **<br>**• Caching sensitive data in unencrypted form.** <br>**• Failing to choose an appropriate caching technology.** <br>**• Choosing inappropriate cache locations and formats.** <br>**• Relying on cached data that may no longer be available in occasionally connected scenarios.**
