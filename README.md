@@ -52,16 +52,17 @@ You have the world and entire future ahead to show your creativity. Do not pour 
 **4. Navigation methods**
 This one again comes on the design front. However, it requires expertise in both front and back end. There are numerous ways to navigate through app features, it is important for you to analyze which one’s good for your mobile application. The list includes:
 
-Single view
-Stacked navigation Bar
-Tab controller
-Scroll views
-Search driven
-Model controller
-Gesture-based
+ - Single view
+ - Stacked navigation Bar
+ - Tab controller
+ - Scroll views
+ - Search driven
+ - Model controller
+ - Gesture-based
 Understand your customers and the app requirement and according chose the navigation method as it directly impacts your user experience.
 
-
+**5. Resource constraints**
+Every design decision should take into account the limited CPU, memory, storage capacity, and battery life of mobile devices. Battery life is usually the most limiting factor in mobile devices. 
 
 ## Author
 
