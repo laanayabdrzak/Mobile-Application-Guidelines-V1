@@ -99,6 +99,9 @@ In general they are a set of standards and guidelines which are/should be used w
  
 #### Structure
  - Comments are a great way to group your methods, especially in view controllers. 
+ - Use styles to avoid duplicate attributes in layout XMLs.
+ - Do not make a deep hierarchy of ViewGroups
+ - Organization build logic approach: **Gradle, CocoaPods, Carthage**
 
 #### External style guides
 It can however be useful to peruse the style guides of other software companies, even if some bits can be quite company-specific or opinionated.
