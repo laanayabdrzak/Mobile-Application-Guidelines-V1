@@ -50,6 +50,7 @@ There are times when connectivity is either intermittent or not available. Your 
 
 #### 3. Defining user interface
 You have the world and entire future ahead to show your creativity. Do not pour it all at the very first stage. Keep your user Interface as simple as possible. It has been noticed that a muddled UI becomes a major reason behind a mobile application’s failure.
+User interfaces must feel natural without many distraction or the users will get frustrated and leave the app altogether. A greater part of our design philosophy involves cutting the clutter to attain the simplest form of user experience.
 
 #### 4. Navigation methods
 This one again comes on the design front. However, it requires expertise in both front and back end. There are numerous ways to navigate through app features, it is important for you to analyze which one’s good for your mobile application. The list includes:
