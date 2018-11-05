@@ -10,7 +10,7 @@ Interested in mobile platforms? Our Best Practices in [Android Development](http
 If you are looking for something specific, you can jump right into the relevant section from here.
 
 1. [Getting Started](#getting-started)
-1. [Architecture](#architecture)
+1. [General Architecture](#general-architecture)
 1. [Design Considerations](#design-considerations)
 1. [Common Issues](#common-issues)
 1. [Key Design Principles](#key-design-principles)
@@ -27,7 +27,7 @@ If you are looking for something specific, you can jump right into the relevant 
 
 The primary reason behind this is the loopholes in mobile app architecture & mobile app development process.
 
-## Architecture
+## General Architecture
 
 Mobile app architecture is a set of patterns and techniques which are required to be followed in order to build a fully structured mobile application. The techniques and patterns are formulated keeping the vendor requirement and industry standards in mind.
 
