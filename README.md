@@ -130,6 +130,14 @@ Take extra care to set up proper log levels before releasing your app. Productio
 When using `TextFields` for password entry, remember to set their `secureTextEntry` property to true to avoid showing the password in cleartext. You should also disable auto-correction for the password field, and clear the field whenever appropriate, such as when your app enters the background.
 
 When this happens, it's also good practice to clear the Pasteboard to avoid passwords and other sensitive data from leaking. As iOS may take screenshots of your app for display in the app switcher, make sure to clear any sensitive data from the UI before returning from `applicationDidEnterBackground`.
+Control version
+
+## Control version
+
+Setting up a continuous integration and delivery process has become critical nowadays as it helps you to squash out bugs early in the development cycle and saves a lot of developer time.
+
+There are a lot of tools available that can help you with continuous integration of iOS apps like Xcode Server, Jenkins and Travis CI. [Read more..](https://developer.apple.com/library/archive/documentation/IDEs/Conceptual/xcode_guide-continuous_integration/)
+
 
 ## Analytics
 
