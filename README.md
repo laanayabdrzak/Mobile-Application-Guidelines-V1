@@ -64,6 +64,7 @@ This one again comes on the design front. However, it requires expertise in both
  - Gesture-based
  
 Understand your customers and the app requirement and according chose the navigation method as it directly impacts your user experience.
+
 ![cih_app](https://github.com/laanayabdrzak/Mobile-Application-Guidelines-V1/blob/master/cih_app.jpg)
 ![paypal_app](https://github.com/laanayabdrzak/Mobile-Application-Guidelines-V1/blob/master/paypal_app.jpg)
 #### 5. Resource constraints
