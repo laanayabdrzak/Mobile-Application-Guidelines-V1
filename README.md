@@ -17,7 +17,7 @@ If you are looking for something specific, you can jump right into the relevant 
 1. [Assets](#assets)
 1. [Coding Style](#coding-style)
 1. [Security](#security)
-1. [Diagnostics](#diagnostics)
+1. [Control Version](#control-version)
 1. [Analytics](#analytics)
 1. [Building](#building)
 1. [Deployment](#deployment)
