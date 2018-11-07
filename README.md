@@ -160,6 +160,18 @@ Besides certificates, there are also provisioning profiles, which are basically 
 
 To sync all certificates and profiles to your machine, go to Accounts in Xcode's Preferences, add your Apple ID if needed, and double-click your team name. There is a refresh button at the bottom, but sometimes you just need to restart Xcode to make everything show up.
 
+#### Debugging Provisioning
+
+Sometimes you need to debug a provisioning issue. For instance, Xcode may refuse to install the build to an attached device, because the latter is not on the (development or ad-hoc) profile's device list. In those cases, you can use Craig Hockenberry's excellent Provisioning plugin by browsing to ~/Library/MobileDevice/Provisioning Profiles, selecting a .mobileprovision file and hitting Space to launch Finder's Quick Look feature. It will show you a wealth of information such as devices, entitlements, certificates, and the App ID.
+
+When dealing with an existing app archive (.ipa), you can inspect its provisioning profile in a similar fashion: Simply rename the *.ipa to ''*.zip'', unpack it and find the .app package within. From its Finder context menu, choose "Show Package Contents" to see a file called embedded.mobileprovision that you can examine with the above method.
+
+#### Uploading
+
+App Store Connect is Apple's portal for managing your apps on the App Store. To upload a build, Xcode requires an Apple ID that is part of the developer account used for signing. Nowadays Apple has allowed for single Apple IDs to be part of multiple App Store Connect accounts (i.e. client organizations) in both Apple's developer portal as well as App Store Connect.
+
+After uploading the build, be patient as it can take up to an hour for it to show up under the Builds section of your app version. When it appears, you can link it to the app version and submit your app for review.
+
 ## Author
 
 <a href="https://www.linkedin.com/in/laanayabdrzak">
