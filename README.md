@@ -77,14 +77,13 @@ Authentication and Authorization | **• Failing to authenticate and authorize i
 Caching | **• Caching unnecessary data on a device that has limited resources. **<br>**• Caching sensitive data in unencrypted form.** <br>**• Failing to choose an appropriate caching technology.** <br>**• Choosing inappropriate cache locations and formats.** <br>**• Relying on cached data that may no longer be available in occasionally connected scenarios.**
 Communication | **• Failing to protect sensitive data over the air.**<br>**• Failing to secure Web service communication.**<br>**• Failing to secure communication over a VPN.**<br>**• Not appreciating the performance impact of communication security on limited-bandwidth connections.**<br>**• Not managing limited-bandwidth connections efficiently.**<br>**• Not managing connections to multiple network services efficiently**<br>**• Not designing to work with intermittent connectivity.**<br>**• Not designing to minimize power usage when running on lower battery power.**
 Configuration Management | **• Failing to restore configuration state after a reset.**
-Data Access | **•Failing to implement data-access mechanisms that work with intermittent connectivity.**<br>**• Not considering database access performance.**<br>**• Navigating through large datasets when not required**
-Device | **• Failing to consider device heterogeneity, such as screen size and CPU power.**<br>**• Not presenting user-friendly error messages to the user.**<br>**• Failing to protect sensitive information.**
+Data Access | **• Failing to implement data-access mechanisms that work with intermittent connectivity.**<br>**• Not considering database access performance.**<br>**• Navigating through large datasets when not required**
+Device | **• Failing to consider device heterogeneity, such as screen size and CPU power.**<br>**• Not presenting user-friendly error messages to the user.**<br>**• Failing to protect sensitive information.**<br>**• Not considering localizations.**
 Exception Management |**• Not recovering application state after an exception.**<br>**• Revealing sensitive information to the end user.**<br>**• Not logging sufficient details about the exception.**
-Synchronization |**• Failing to secure synchronization when communicating.**<br>**• Failing to manage synchronization over the air as opposed to cradled synchronization.**<br>**• Failing to manage synchronization interruptions.**<br>**• Failing to handle synchronization conflicts.**<br>**• Failing to consider merge replication where appropriate.**
-Testing |**• Failing to appreciate debugging costs when choosing to support multiple device types.**<br>**• Failing to design with debugging in mind; for example, using emulators instead of the actual devices.**<br>**• Failing to debug in all connection scenarios.**
+Synchronization |**• Failing to secure synchronization when communicating.**<br>**• Failing to manage synchronization over the air as opposed to cradled synchronization.**<br>**• Failing to manage synchronization interruptions.**<br>**• Failing to handle synchronization conflicts.**
+Testing |**• Not considering debugging costs when choosing to support multiple device types.**<br>**• Failing to design with debugging in mind; for example, using emulators instead of the actual devices.**<br>**• Failing to debug in all connection scenarios.**
 Logging |**• Not considering remote logging instead of logging on the device.**<br>**• Not considering how to access device logs.**<br>**• Not considering resource constraints when logging.**<br>**• Failing to protect sensitive information in the log files.**
 UI |**• Not considering that only one application can be running.**<br>**• Not designing a touch-screen or stylus-driven UI for usability.**<br>**• Not including support for multiple screen sizes and orientations.**<br>**• Not managing device reset and resume.**
-Validation |**• Not validating input and data during host PC communication.**<br>**• Not validating input and data during over-the-air communication.**
                                 
 
 ## Key Design Principles
@@ -93,6 +92,7 @@ When getting started with your design, bear in mind the key principles that will
 
 ## Coding styles
 In general they are a set of standards and guidelines which are/should be used when writing the source code for a program
+
 #### Naming
  - Meaningful names and functions.
  - Use pronounceable names.
@@ -101,8 +101,9 @@ In general they are a set of standards and guidelines which are/should be used w
  
 #### Structure
  - Comments are a great way to group your methods, especially in view controllers. 
- - Use styles to avoid duplicate attributes in layout XMLs.
+ - Make in mind reusability of components.
  - Do not make a deep hierarchy of ViewGroups
+ - It’s a good idea to set up some folder structure depending on your architecture
  - Organization build logic approach: **Gradle, CocoaPods, Carthage**
 
 #### External style guides
@@ -129,6 +130,19 @@ Take extra care to set up proper log levels before releasing your app. Productio
 When using `TextFields` for password entry, remember to set their `secureTextEntry` property to true to avoid showing the password in cleartext. You should also disable auto-correction for the password field, and clear the field whenever appropriate, such as when your app enters the background.
 
 When this happens, it's also good practice to clear the Pasteboard to avoid passwords and other sensitive data from leaking. As iOS may take screenshots of your app for display in the app switcher, make sure to clear any sensitive data from the UI before returning from `applicationDidEnterBackground`.
+
+## Analytics
+## Building
+## Deployment
+
+Deploying software on iOS devices isn't exactly straightforward. Here are some central concepts that, once understood, will help you tremendously with it.
+
+#### Signing
+Whenever you want to run software on an actual device (as opposed to the simulator), you will need to sign your build with a certificate issued by Apple. Each certificate is linked to a private/public keypair, the private half of which resides in your Mac's Keychain. There are two types of certificates:
+
+**- Development certificate**: Every developer on a team has their own, and it is generated upon request. Xcode might do this for you, but it's better not to press the magic "Fix issue" button and understand what is actually going on. This certificate is needed to deploy development builds to devices.
+
+**- Distribution certificate**: There can be several, but it's best to keep it to one per organization, and share its associated key through some internal channel. This certificate is needed to ship to the App Store, or your organization's internal "enterprise app store".
 
 ## Author
 
