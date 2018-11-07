@@ -68,7 +68,7 @@ Understand your customers and the app requirement and according chose the naviga
 ![cih_app](https://github.com/laanayabdrzak/Mobile-Application-Guidelines-V1/blob/master/cih_app.jpg)
 ![paypal_app](https://github.com/laanayabdrzak/Mobile-Application-Guidelines-V1/blob/master/paypal_app.jpg)
 #### 5. Resource constraints
-Every design decision should take into account the limited CPU, memory, storage capacity, and battery life of mobile devices. **Battery life** is usually the most limiting factor in mobile devices. **Battery life** is usually the most limiting factor in mobile devices. Backlighting, reading and writing to memory, wireless connections, specialized hardware, and processor speed all have an impact on the overall power usage. 
+Every design decision should take into account the limited CPU, memory, storage capacity, and battery life of mobile devices. **Battery life** is usually the most limiting factor in mobile devices. Backlighting, reading and writing to memory, wireless connections, specialized hardware, and processor speed all have an impact on the overall power usage. 
 
 ## Common Issues
 There are several common issues that you must consider as your develop your design. These issues can be categorized into specific areas of the design. The following table lists the common issues for each category where mistakes are most often made.
