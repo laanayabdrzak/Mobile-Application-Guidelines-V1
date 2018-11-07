@@ -136,7 +136,7 @@ Control version
 
 Setting up a continuous integration and delivery process has become critical nowadays as it helps you to squash out bugs early in the development cycle and saves a lot of developer time.
 
-There are a lot of tools available that can help you with continuous integration of iOS apps like Xcode Server, Jenkins and Travis CI. [Read more..](https://developer.apple.com/library/archive/documentation/IDEs/Conceptual/xcode_guide-continuous_integration/)
+There are a lot of tools available that can help you with continuous integration of iOS apps like [Xcode Server](https://developer.apple.com/library/archive/documentation/IDEs/Conceptual/xcode_guide-continuous_integration/), [Jenkins](https://content.pivotal.io/blog/ios-ci-with-jenkins) and [Travis CI](https://travis-ci.org/).
 
 
 ## Analytics
