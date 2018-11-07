@@ -140,9 +140,23 @@ Deploying software on iOS devices isn't exactly straightforward. Here are some c
 #### Signing
 Whenever you want to run software on an actual device (as opposed to the simulator), you will need to sign your build with a certificate issued by Apple. Each certificate is linked to a private/public keypair, the private half of which resides in your Mac's Keychain. There are two types of certificates:
 
-**- Development certificate**: Every developer on a team has their own, and it is generated upon request. Xcode might do this for you, but it's better not to press the magic "Fix issue" button and understand what is actually going on. This certificate is needed to deploy development builds to devices.
+**• Development certificate**: Every developer on a team has their own, and it is generated upon request. Xcode might do this for you, but it's better not to press the magic "Fix issue" button and understand what is actually going on. This certificate is needed to deploy development builds to devices.
 
-**- Distribution certificate**: There can be several, but it's best to keep it to one per organization, and share its associated key through some internal channel. This certificate is needed to ship to the App Store, or your organization's internal "enterprise app store".
+**• Distribution certificate**: There can be several, but it's best to keep it to one per organization, and share its associated key through some internal channel. This certificate is needed to ship to the App Store, or your organization's internal "enterprise app store".
+
+#### Provisioning
+
+Besides certificates, there are also provisioning profiles, which are basically the missing link between devices and certificates. Again, there are two types to distinguish between development and distribution purposes:
+
+**• Development provisioning profile**: It contains a list of all devices that are authorized to install and run the software. It is also linked to one or more development certificates, one for each developer that is allowed to use the profile. The profile can be tied to a specific app or use a wildcard App ID (*). The latter is discouraged, because Xcode is notoriously bad at picking the correct files for signing unless guided in the right direction. Also, certain capabilities like Push Notifications or App Groups require an explicit App ID.
+
+**• Distribution provisioning profile**: There are three different ways of distribution, each for a different use case. Each distribution profile is linked to a distribution certificate, and will be invalid when the certificate expires.
+
+   1. Ad-Hoc: Just like development profiles, it contains a whitelist of devices the app can be installed to. This type of profile can be used for beta testing on 100 devices per year. For a smoother experience and up to 1000 distinct users, you can use Apple's newly acquired TestFlight service. Supertop offers a good summary of its advantages and issues.
+
+   2. App Store: This profile has no list of allowed devices, as anyone can install it through Apple's official distribution channel. This profile is required for all App Store releases.
+
+   3. Enterprise: Just like App Store, there is no device whitelist, and the app can be installed by anyone with access to the enterprise's internal "app store", which can be just a website with links. This profile is available only on Enterprise accounts.
 
 ## Author
 
