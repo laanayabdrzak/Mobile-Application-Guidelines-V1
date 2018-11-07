@@ -132,6 +132,13 @@ When using `TextFields` for password entry, remember to set their `secureTextEnt
 When this happens, it's also good practice to clear the Pasteboard to avoid passwords and other sensitive data from leaking. As iOS may take screenshots of your app for display in the app switcher, make sure to clear any sensitive data from the UI before returning from `applicationDidEnterBackground`.
 
 ## Analytics
+
+Including some analytics framework in your app is strongly recommended, as it allows you to gain insights on how people actually use it. Does feature X add value? Is button Y too hard to find? To answer these, you can send events, timings and other measurable information to a service that aggregates and visualizes them – for instance, Google Tag Manager. The latter is more versatile than Google Analytics in that it inserts a data layer between app and Analytics, so that the data logic can be modified through a web service without having to update the app.
+
+ #### crashLogs
+ 
+First you should make your app send crash logs onto a server somewhere so that you can access them. You can implement this manually (using PLCrashReporter and your own backend) but it’s recommended that you use an existing service instead — for example one of the following: **(Fabric, HockeyApp, Crittercism, Splunk MINTexpress, Instabug).**
+
 ## Building
 ## Deployment
 
