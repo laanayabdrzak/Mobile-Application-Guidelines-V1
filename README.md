@@ -108,6 +108,12 @@ In general they are a set of standards and guidelines which are/should be used w
  - It’s a good idea to set up some folder structure depending on your architecture
  - Organization build logic approach: **Gradle, CocoaPods, Carthage**
 
+#### Project folders
+ - Create folders for the platforms
+ - Under the platforms subfolder the target templates
+ - Create a Shared container for cross-platform files
+ - Separate the items into Assets and Source directories
+
 #### External style guides
 It can however be useful to peruse the style guides of other software companies, even if some bits can be quite company-specific or opinionated.
 
