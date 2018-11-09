@@ -19,7 +19,7 @@ If you are looking for something specific, you can jump right into the relevant 
 1. [Security](#security)
 1. [Control Version](#control-version)
 1. [Analytics](#analytics)
-1. [Building](#building)
+1. [Automation](#automation)
 1. [Deployment](#deployment)
 
 
@@ -134,13 +134,6 @@ When using `TextFields` for password entry, remember to set their `secureTextEnt
 When this happens, it's also good practice to clear the Pasteboard to avoid passwords and other sensitive data from leaking. As iOS may take screenshots of your app for display in the app switcher, make sure to clear any sensitive data from the UI before returning from `applicationDidEnterBackground`.
 Control version
 
-## Control version
-
-Setting up a continuous integration and delivery process has become critical nowadays as it helps you to squash out bugs early in the development cycle and saves a lot of developer time.
-
-There are a lot of tools available that can help you with continuous integration of iOS apps like [Xcode Server](https://developer.apple.com/library/archive/documentation/IDEs/Conceptual/xcode_guide-continuous_integration/), [Jenkins](https://content.pivotal.io/blog/ios-ci-with-jenkins) and [Travis CI](https://travis-ci.org/).
-
-
 ## Analytics
 
 Including some analytics framework in your app is strongly recommended, as it allows you to gain insights on how people actually use it. Does feature X add value? Is button Y too hard to find? To answer these, you can send events, timings and other measurable information to a service that aggregates and visualizes them – for instance, [Google Tag Manager](https://marketingplatform.google.com/about/tag-manager/). The latter is more versatile than Google Analytics in that it inserts a data layer between app and Analytics, so that the data logic can be modified through a web service without having to update the app.
@@ -149,7 +142,10 @@ Including some analytics framework in your app is strongly recommended, as it al
  
 First you should make your app send crash logs onto a server somewhere so that you can access them. You can implement this manually (using [PLCrashReporter](https://www.plcrashreporter.org/) and your own backend) but it’s recommended that you use an existing service instead — for example one of the following: **(Fabric, HockeyApp, Crittercism, Splunk MINTexpress, Instabug).**
 
-## Building
+## Automation
+
+**Continuous Integration** and **Continuous Delivery** highly fundamental topics in the software industry especially with the cloud and container technologies. Container technologies such as **Docker, Kubernetes**, **OpenShift** and automation servers like **Jenkins** make easier to manage our projects workflow.
+
 ## Deployment
 
 Deploying software on iOS devices isn't exactly straightforward. Here are some central concepts that, once understood, will help you tremendously with it.
