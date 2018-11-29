@@ -1,0 +1,35 @@
+{
+  "dateOuvertureCompte": "2013-09-04",
+  "statutCompte": "O",
+  "chapitreCompte": "201118    ",
+  "convention": "1",
+  "paysCompte": "LIBYE                         ",
+  "joursDebiteurNJour": 0,
+  "jourSansPassageCrediteur": 0,
+  "soldeMoyenNetNMois": 0,
+  "epargneTotalClient": 0,
+  "montantDecouverteAutorise": 0,
+  "codeClient": "001411679      ",
+  "rib": "022330000128002757063463 ",
+  "cin": "",
+  "typeClient": "CLIPRO",
+  "codeMarcheClient": "02                                      ",
+  "intitule": "inti001280000275706           ",
+  "nom": "nom001411679                        ",
+  "prenom": "pre001411679                  ",
+  "clientEtranger": "1",
+  "passeport": "085039              ",
+  "dateFinValiditeCIN": "2014-06-01",
+  "codeConvention": "000000000                               ",
+  "tel1": "661000000           ",
+  "tel2": "661000000           ",
+  "tel3": "661000000           ",
+  "adresse": "adr1001411679                  adr2001411679                  adr3001411679                 ",
+  "codePostal": "10000     ",
+  "ville": "SABHA                         ",
+  "_links": {
+    "customer-with-params_[agence-compte-devise]": {
+      "href": "http://localhost:8093/customers/?agence=00128&compte=0275706&devise=000"
+    }
+  }
+}
